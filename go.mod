@@ -1,3 +1,3 @@
-module atomicgo.dev/template
+module atomicgo.dev/atomictest
 
 go 1.18

@@ -1,4 +1,4 @@
-package template
+package atomictest
 
 import "testing"
 

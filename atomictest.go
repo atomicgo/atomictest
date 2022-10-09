@@ -1,4 +1,4 @@
-package template
+package atomictest
 
 // HelloWorld returns `Hello, World!`.
 func HelloWorld() string {

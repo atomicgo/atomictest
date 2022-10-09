@@ -1,9 +1,4 @@
 /*
-Package template is used to generate new AtomicGo repositories.
-
-Write the description of the module here. You can use **markdown**!
-This description should clearly explain what the package does.
-
-Example description: https://golang.org/src/encoding/gob/doc.go
+Package atomictest is a testing repository for the AtomicGo organisation. It does not provide any value.
 */
-package template
+package atomictest
