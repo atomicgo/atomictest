@@ -13,11 +13,12 @@ jobs:
         # We don't want to tweet if the repository is not a public one
         if: ${{ !github.event.repository.private }}
         with:
-          # GitHub event payload
-          # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
-          tweet-message: "New ${{ github.event.repository.name }} release ${{ github.event.release.tag_name }}! Try it out: ${{ github.event.release.html_url }} #go #golang #opensource #library #release"
+          tweet-message: "New ${{ github.event.repository.name }} release: ${{ github.event.release.tag_name }}! 🎉
+          
+           Try it out: ${{ github.event.release.html_url }}
+           
+           #go #golang #opensource #library #release #atomicgo"
         env:
-          # Get your tokens from https://developer.twitter.com/apps
           TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
